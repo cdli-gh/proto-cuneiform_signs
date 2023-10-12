@@ -2,7 +2,6 @@ import os
 import shutil
 import sys
 
-# Function for getting the actual image file associated with the URL
 # Convert the PNGs to SVGs
 def conv_to_svg(folder_path):
     folder_prefix = folder_path
@@ -47,4 +46,5 @@ def conv_to_svg(folder_path):
           #print(cmd)
           os.system(cmd)
 
-conv_to_svg("archsigns")
+dir_name = str(input("Enter name of folder with PNG/JPG files: "))
+conv_to_svg(dir_name)
